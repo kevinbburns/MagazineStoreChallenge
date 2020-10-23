@@ -7,11 +7,11 @@ Enter in a number for times to execute the request[1-20] or [E] to exit:
 
 After a short period, you will be presented with similar data(depending on your CPU and network speed, your results might vary):
 
-Fastest Time To Complete: 00:00:04.1147600
-Slowest Time To Complete: 00:00:08.1492368
-Average Time To Complete: 00:00:05.8520850
-Number of attempts successful: 10
-Number of attempts unsuccessful: 0
+Fastest Time To Complete: 00:00:04.1147600\n
+Slowest Time To Complete: 00:00:08.1492368\n
+Average Time To Complete: 00:00:05.8520850\n
+Number of attempts successful: 10\n
+Number of attempts unsuccessful: 0\n
 
 If you are presented with this:
 
