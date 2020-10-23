@@ -5,6 +5,8 @@ After downloading and compiling the code, begin by executing the application. Th
 
 Enter in a number for times to execute the request[1-20] or [E] to exit:
 
+Enter a number between 1 and 20 to begin.
+
 After a short period, you will be presented with similar data(depending on your CPU and network speed, your results might vary):
 
 Fastest Time To Complete: 00:00:04.1147600  <br />
