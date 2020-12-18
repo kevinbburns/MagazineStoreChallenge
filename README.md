@@ -1,9 +1,5 @@
-<html>
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
+
 <!--
  /* Font Definitions */
  @font-face
@@ -60,20 +56,9 @@ div.WordSection1
 ul
 	{margin-bottom:0in;}
 -->
-</style>
 
-</head>
-
-<body lang=EN-US style='word-wrap:break-word'>
-
-<div class=WordSection1>
-
-<h1><b>#MagazineStoreChallenge </b></h1>
 
 <h1>Summarize the project and what problem it was solving.</h1>
-
-<p class=MsoNormal>&nbsp;</p>
-
 <p class=MsoNormal>I was interviewing for a position at a company as a Senior .Net/C#
 Programmer; during the process, they had tasked me with some homework. The task
 was to consume a remote RESTful .Net Core Web.API, and grab a list of magazines,
@@ -83,9 +68,6 @@ calls to the server to simulate real-world CPU spikes. Whoever could capture
 and aggregate the data fastest moved on to the final round of interviews. </p>
 
 <h1>What did you do particularly well?</h1>
-
-<p class=MsoNormal>&nbsp;</p>
-
 <p class=MsoNormal>The two main things that I did exceptionally well were reading
 the included instructions and “multi” tasking. After moving on to the final round
 and given an offer letter, I had a chance to discuss the other developers'
@@ -98,9 +80,6 @@ submitted code, mine ran the fastest.</p>
 
 <h1>Where could you enhance your code? How would these improvements make your
 code more efficient, secure, and so on?</h1>
-
-<p class=MsoNormal>&nbsp;</p>
-
 <p class=MsoNormal>I feel like the code on the “client” side is about as fast
 as it will get in a language like C#. But, the Web.API did not require any header-checking
 or authentication. Public-facing or not, it is always a good idea to require
@@ -109,9 +88,6 @@ some JSON token, at least to prevent a robot crawler or malicious user.</p>
 <h1>Did you find writing any piece of this code challenging, and how did you
 overcome this? What tools and/or resources are you adding to your support
 network?</h1>
-
-<p class=MsoNormal>&nbsp;</p>
-
 <p class=MsoNormal>The hardest part of the challenge was trying to compensate
 for the calls that would be slowed down. My first thought was to use some sort
 of timer and track the calls. But I switched over to a task-based system, which
@@ -122,17 +98,11 @@ data.</p>
 
 <h1>What skills from this project will be particularly transferable to other
 projects and/or course work?</h1>
-
-<p class=MsoNormal>&nbsp;</p>
-
 <p class=MsoNormal>Many projects will require a developer to write code that
 runs asynchronously in threads to prevent blocking a GUI or minimize time spent
 on tasks. </p>
 
 <h1>How did you make this program maintainable, readable, and adaptable?</h1>
-
-<p class=MsoNormal>&nbsp;</p>
-
 <p class=MsoNormal>I had used an N-Tier development style. I created a service-tier
 to communicate with the remote servers, a data-tier that contained all of my
 facets, business models, and interfaces, and finally, a logic/presentation-teir
@@ -143,8 +113,6 @@ also added comments on tasks and functions to follow my code and reuse it in
 another project or make changes quickly.</p>
 
 <h1>Instructions</h1>
-
-<p class=MsoNormal>&nbsp;</p>
 
 <p class=MsoNormal>The source code respository of a proposed programming
 challenge.</p>
@@ -182,13 +150,3 @@ Logs folder.</p>
 <p class=MsoNormal>Navigate to the folder that contains the executable file; it
 will now have a folder labeled &quot;Logs&quot; and include the contents of the
 exception.</p>
-
-<h1>&nbsp;</h1>
-
-<h1>&nbsp;</h1>
-
-</div>
-
-</body>
-
-</html>
