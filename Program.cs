@@ -78,6 +78,13 @@ namespace MagazineStoreChallenge
             }
         }
 
+        /// <summary>
+        /// This function will create a separate thread, and run the items from the service layer.
+        /// At the service layer, we are consuming the data from the remote web api and grabbing the data.
+        /// The task will aggregate the data, and run the results in parallel to determine which magazine
+        /// belongs to which client.
+        /// </summary>
+        /// <exception cref="Exception">Unable to process data, check return from end-points.</exception>
         private static async Task RunWebThread()
         {
             var serviceLayer         = new MagazineStoreService(Properties.Settings.Default.BaseWebApi);
@@ -136,18 +143,30 @@ namespace MagazineStoreChallenge
             SubmitAnswerResponses.Add(answerResponse);
         }
 
+        /// <summary>
+        /// Gets the fastest running web api task from the list.
+        /// </summary>
+        /// <returns>TimeSpan.</returns>
         private static TimeSpan GetFastest()
         {
             return SubmitAnswerResponses.Where(x => x.TotalTime != null).OrderBy(x => x.TotalTime).Select(x => x.TotalTime.Value)
                   .First();
         }
 
+        /// <summary>
+        /// Gets the slowest running web api task from the list.
+        /// </summary>
+        /// <returns>TimeSpan.</returns>
         private static TimeSpan GetSlowest()
         {
             return SubmitAnswerResponses.Where(x => x.TotalTime != null).OrderByDescending(x => x.TotalTime).Select(x => x.TotalTime.Value)
                 .First();
         }
 
+        /// <summary>
+        /// Gets the average of all the running API tasks from the list.
+        /// </summary>
+        /// <returns>TimeSpan.</returns>
         private static TimeSpan GetAvg()
         {
             var doubleAverageTicks = SubmitAnswerResponses.Where(x => x.TotalTime != null).Select(x => x.TotalTime.Value).Average(timeSpan => timeSpan.Ticks);
